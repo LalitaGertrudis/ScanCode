@@ -5,10 +5,9 @@ import {
 	Text,
 	StyleSheet,
 } from 'react-native';
-
+import { Colors, Fonts } from '@styles';
 
 const Button = ({ title, onPress }) => {
-	
 	return (
 		<Pressable onPress={onPress}>
 			<View style={styles.container}>
@@ -22,18 +21,18 @@ const styles = StyleSheet.create({
 	container: {
 		justifyContent: 'center',
 		alignItems: 'center',
-		height: 60,
-		backgroundColor: 'tomato',
+		backgroundColor: Colors.primary,
 		marginLeft: 20,
 		marginRight: 20,
 		borderRadius: 30,
 		marginBottom: 10,
 		marginTop: 10,
+		padding: 12,
 	},
 	title: {
+		...Fonts.SatoshiBlack,
 		color: 'white',
 		fontSize: 20,
-		fontWeight: 'bold',
 	}
 });
 

@@ -10,9 +10,12 @@ import {
 } from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
 import { Validator } from '@services';
-
+import { useTheme } from '@react-navigation/native';
+import { Fonts } from '@styles';
 
 const History = ({ items = [], onClearHistory }) => {
+	const { colors } = useTheme();
+	const styles = stylesheet(colors);
 	const [copiedText, setCopiedText] = useState('');
 
 	const HistoryItem = ({ item }) => {
@@ -70,22 +73,24 @@ const History = ({ items = [], onClearHistory }) => {
 	);
 };
 
-const styles = StyleSheet.create({
+const stylesheet = colorScheme => StyleSheet.create({
 	itemContainer: {
-		backgroundColor: 'white',
+		backgroundColor: colorScheme.backgroundItem,
 		padding: 10,
 		margin: 10,
 		borderRadius: 10,
+		borderColor: colorScheme.shadow,
+		borderWidth: 1,
 	},
 	itemData: {
+		...Fonts.Satoshi,
 		fontSize: 18,
-		fontWeight: 'bold',
-		color: 'darkslategray',
+		color: colorScheme.text,
 	},
 	itemDate: {
+		...Fonts.Satoshi,
 		fontSize: 14,
-		fontWeight: 'normal',
-		color: 'gray',
+		color: colorScheme.primary,
 		marginTop: 5,
 	},
 	headerContainer: {
@@ -95,8 +100,9 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 	},
 	headerTitle: {
-		fontSize: 24,
-		fontWeight: 'bold',
+		fontSize: 34,
+		...Fonts.SatoshiBlack,
+		color: colorScheme.text,
 	},
 	clearButtonContainer: {
 		backgroundColor: 'crimson',
@@ -104,11 +110,11 @@ const styles = StyleSheet.create({
 		borderRadius: 20,
 	},
 	clearButtonTitle: {
+		...Fonts.Satoshi,
 		color: 'white',
 		fontSize: 12,
 		marginLeft: 5,
 		marginRight: 5,
-		fontWeight: 'bold',
 	}
 });
 

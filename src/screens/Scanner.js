@@ -1,18 +1,9 @@
 import React, { useRef } from 'react';
-import {
-	SafeAreaView,
-	StyleSheet,
-	View,
-} from 'react-native';
-import {
-	RNCamera
-} from 'react-native-camera';
-
+import { SafeAreaView, View } from 'react-native';
+import { RNCamera } from 'react-native-camera';
 
 const Scanner = ({ navigation }) => {
 	const camera = useRef();
-
-
 	const onBarcodeDetected = ({ barcodes }) => {
 		if (barcodes.length > 0) {
 			navigation.navigate('Dashboard', {
@@ -22,11 +13,11 @@ const Scanner = ({ navigation }) => {
 	};
 
 	return (
-		<SafeAreaView style={{ flex: 1, backgroundColor: '#000' }}>
+		<SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
 			<RNCamera
 				autoFocus={true}
 				ref={camera}
-				style={{ flex: 1, backgroundColor: '#000' }}
+				style={{ flex: 1, backgroundColor: 'black' }}
 				type={RNCamera.Constants.Type.back}
 				flashMode={RNCamera.Constants.FlashMode.on}
 				androidCameraPermissionOptions={{

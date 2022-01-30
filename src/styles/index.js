@@ -1,7 +1,10 @@
-import Colors from './Colors';
-import Theme from './Theme';
+import AppTheme from './AppTheme'
+import Colors from './Colors'
+import Fonts from './Fonts'
 
 export {
+	AppTheme,
 	Colors,
-	Theme,
-};
+	Fonts,
+}
+

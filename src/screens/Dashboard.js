@@ -8,13 +8,11 @@ import {
 	Image,
 	Linking,
 	Alert,
+	StyleSheet,
 } from 'react-native';
 import Clipboard from '@react-native-clipboard/clipboard';
-
 import { Button, Empty, History } from '@components';
-import { Theme } from '@styles';
-import { Storage } from '@services';
-import { Validator } from '@services';
+import { Storage, Validator } from '@services';
 
 const Dashboard = ({ navigation, route }) => {
 	const [copiedText, setCopiedText] = useState('');
@@ -87,11 +85,17 @@ const Dashboard = ({ navigation, route }) => {
 	};
 
 	return (
-		<SafeAreaView style={Theme.fullscreen}>
+		<SafeAreaView style={styles.fullscreen}>
 			{history.length === 0 ? <Empty /> : <History items={history} onClearHistory={onClearHistory} />}
 			<Button title="Open Scanner" onPress={openScanner} />
 		</SafeAreaView>
 	);
 };
+
+const styles = StyleSheet.create({
+	fullscreen: {
+		flex: 1,
+	},
+});
 
 export default Dashboard;

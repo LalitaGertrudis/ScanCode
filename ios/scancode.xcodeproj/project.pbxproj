@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* scancodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* scancodeTests.m */; };
+		1317BF7727A5FB7E009D1948 /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1317BF7527A5FB7E009D1948 /* Satoshi-Medium.otf */; };
+		1317BF7827A5FB7E009D1948 /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1317BF7527A5FB7E009D1948 /* Satoshi-Medium.otf */; };
+		1317BF7927A5FB7E009D1948 /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1317BF7627A5FB7E009D1948 /* Satoshi-Black.otf */; };
+		1317BF7A27A5FB7E009D1948 /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1317BF7627A5FB7E009D1948 /* Satoshi-Black.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -31,6 +35,8 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* scancodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scancodeTests.m; sourceTree = "<group>"; };
 		065B4D7A4184C0C0B791366C /* libPods-scancode-scancodeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scancode-scancodeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1317BF7527A5FB7E009D1948 /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Satoshi-Medium.otf"; path = "../src/assets/fonts/Satoshi-Medium.otf"; sourceTree = "<group>"; };
+		1317BF7627A5FB7E009D1948 /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Satoshi-Black.otf"; path = "../src/assets/fonts/Satoshi-Black.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* scancode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scancode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = scancode/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = scancode/AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 		13B07FAE1A68108700A75B9A /* scancode */ = {
 			isa = PBXGroup;
 			children = (
+				1317BF7627A5FB7E009D1948 /* Satoshi-Black.otf */,
+				1317BF7527A5FB7E009D1948 /* Satoshi-Medium.otf */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -235,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1317BF7827A5FB7E009D1948 /* Satoshi-Medium.otf in Resources */,
+				1317BF7A27A5FB7E009D1948 /* Satoshi-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				1317BF7927A5FB7E009D1948 /* Satoshi-Black.otf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1317BF7727A5FB7E009D1948 /* Satoshi-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
